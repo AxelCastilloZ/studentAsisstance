@@ -1,0 +1,114 @@
+:root{
+    
+--orange-peel: #ff9f1cff;
+--hunyadi-yellow: #ffbf69ff;
+--white: #ffffffff;
+--mint-green: #cbf3f0ff;
+--light-sea-green: #2ec4b6ff;
+
+--fuentePrincipal:"Nosifer",sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+
+
+body{
+    font-family: var(--fuentePrincipal);
+    background-color: var(--mint-green);
+}
+
+h2{
+    font-size: 2rem;
+}
+
+#assistanceForm-container{
+
+    background-color: var(--hunyadi-yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+#assistanceForm-container form{
+    position: relative;
+    top: 0;
+    font-size: 1.5rem;
+    margin: 3rem;
+}
+
+#resumen-assistance-container{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin: 2rem;
+   padding: 2rem;
+
+}
+
+
+#resumen-assistance-container table{
+    padding: 0;
+    font-size: 1.5rem;
+    border: 1.5px solid;
+   border-collapse: collapse;
+}
+
+button{
+    background-color: var(--light-sea-green);
+}
+
+
+#resumen-assistance-container th,
+#resumen-assistance-container td{
+
+    border: 1.5px solid;
+    padding: 1rem;
+    text-align: center;
+
+
+}
+
+/*
+#assistance-container {
+    display: none;
+
+
+}
+
+*/
+
+#assistance-container{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease,visibility 0.3s ease;
+    height: 0;
+    overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   margin-left: 6rem;
+   justify-content: flex-start;
+   font-size: 2rem;
+  
+   
+}
+
+#assistance-container.visible{
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}
+
+
+
+#boton-mostrar{
+    margin-left: 4rem;
+    font-size: 2rem;
+
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AsistenciaEstudiantil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div id="assistanceForm-container">
+            <h2>Asistencia de Estudiantes</h2>
+        <form id="assistance">
+            <input type="text" id="studentName" placeholder="Nombre del Estudiante" required>
+            <select name="typeAssistance" id="typeAssistance" >
+            <option value="Presente">Presente</option>
+            <option value="Ausente">Ausente</option>
+            </select>
+            
+           
+            <button type="submit">Registrar Asistencia</button>
+
+        </form>
+    </div>
+
+
+    <div id="resumen-assistance-container">
+        <h2>Lista de hoy</h2>
+        <table> 
+           <thead>
+            <tr>
+                <th>Nombre del Estudiante</th>
+                <th>Asistencia</th>
+                <th>Fecha</th>
+                <th>Acciones</th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+                
+            </tr>
+            <tr>
+               
+            </tr>
+           </tbody>
+
+        </table>
+
+    </div>
+
+    <button id="boton-mostrar">Mostrar resumen</button>
+
+    <div id="assistance-container">
+        <h3>Lista de hoy</h3>
+        <ul id="assistance-list">
+            <li></li>
+        </ul>
+     
+    </div>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
